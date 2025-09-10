@@ -21,9 +21,7 @@ const khong = 0;
   const bay = 1;
   const tam = 1;
   const chin = 9
-  // const bamso = ()=>{
-  //   setSoMot()
-  // }
+  
 
   const Tong =()=>{
     const total = soMot + soHai;
@@ -49,36 +47,36 @@ const khong = 0;
     
     <View >
       <View style={styles.tableNum}>
-    <TouchableOpacity style={styles.number}>
+    <TouchableOpacity style={styles.number} onPress={()=>setSoMot(0)}>
       <Text>{khong}</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.number}>
+    <TouchableOpacity style={styles.number} onPress={()=>setSoMot(1)}>
       <Text>{mot}</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.number}>
+    <TouchableOpacity style={styles.number} onPress={()=>setSoMot(0)}>
       <Text>{hai}</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.number}>
+    <TouchableOpacity style={styles.number}onPress={()=>setSoMot(0)}>
       <Text>{ba}</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.number}>
+    <TouchableOpacity style={styles.number}onPress={()=>setSoMot(0)}>
       <Text>{bon}</Text>
     </TouchableOpacity>
     </View>
     <View style={styles.tableNum}>
-    <TouchableOpacity style={styles.number}>
+    <TouchableOpacity style={styles.number}onPress={()=>setSoMot(0)}>
       <Text>{nam}</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.number}>
+    <TouchableOpacity style={styles.number}onPress={()=>setSoMot(0)}>
       <Text>{sau}</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.number}>
+    <TouchableOpacity style={styles.number}onPress={()=>setSoMot(0)}>
       <Text>{bay}</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.number}>
+    <TouchableOpacity style={styles.number}onPress={()=>setSoMot(0)}>
       <Text>{tam}</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.number}>
+    <TouchableOpacity style={styles.number}onPress={()=>setSoMot(0)}>
       <Text>{chin}</Text>
     </TouchableOpacity>
     </View>
@@ -98,6 +96,9 @@ const khong = 0;
     </TouchableOpacity>
     <TouchableOpacity style={styles.number}>
       <Text>delete</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.number}>
+      <Text>=</Text>
     </TouchableOpacity>
     </View>
     <Text style={{color: 'white'}}>Phep tinh</Text>
